@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+         <title>Zainab_Atwa_202109347</title>
+      <style>
+
+
+        #root {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .inside {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+        }
+        .addC{
+            background-color: rgb(251, 0, 188);
+        }
+        .changeB{
+            border-radius: 25px;
+        }
+        
+
+      </style>
+
+    </head>
+
+    <body>
+
+        <script>
+
+       function appendDiv(){
+        var iv = $("<div></div>").text("Div").css({"width": "50px", "hieght": "50px"}).addClass("inside"); 
+        $("body").append($("<br>"));
+        $("body").append(iv);
+
+       }
+
+       function ToggleColor(){
+        $(".inside").toggleClass('addC');
+       }
+
+         $(document).ready(function () {
+
+
+        $("#bor").click(function(){
+            $(".inside").toggleClass('changeB');
+        });
+
+    });
+
+        </script>
+
+
+        <button id="add" style=" display: inline;" onclick="appendDiv()">Append Div</button>
+        <button id="colo" style="display: inline;"onclick="ToggleColor()" >ToggleColor</button>
+        <button id="bor" style="display: inline;" onclick="ToggleBorder()">ToggleBorder</button>
+        <br><br>
+         
+
+    </body>
+  </html>

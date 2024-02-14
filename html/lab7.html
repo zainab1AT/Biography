@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+         <title>Zainab_Atwa_202109347</title>
+      <style>
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(123, 123, 255);
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+    </style>  
+  </head>
+
+<body style="background-color: rgb(123, 123, 255);">
+
+<h1>Zainab_Atwa_202109347</h1>
+<p>Color Gradation by IQ</p>
+<div id="pa" class="flex-container"> </div>
+
+    <script>
+      $(document).ready(function(){
+       var root=$('#pa');
+
+    function createDiv(text, color) {
+      const innerDiv = $("<div></div>");
+      innerDiv.text(text);
+      innerDiv.css("background-color", color ); 
+      innerDiv.css("opacity",0) 
+      root.append(innerDiv);
+    }
+
+    for (let i = 0; i < 256; i++) {
+       createDiv("R "+i,`rgb(${i},0,0)`); 
+}
+    for (let i = 0; i < 256; i++) {
+       createDiv("G "+i,`rgb(0,${i},0)`); 
+}
+    for (let i = 0; i < 256; i++) {
+       createDiv("B "+i,`rgb(0,0,${i})`); 
+}
+    for (let i = 0; i < 256; i++) {
+       createDiv("W "+i,`rgb(${i},${i},${i})`); 
+       
+}
+
+var duration = 100;
+
+    $(".flex-container > div").each(function (i) {
+      $(this).delay(i * duration).animate({ opacity: 1});
+    });
+});
+
+
+    </script>
+
+
+
+
+</body>
+</html>

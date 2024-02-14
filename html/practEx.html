@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>exam</title>
+
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header header header'
+    'menu main main main main main main main right'
+    'menu footer footer footer footer footer footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+body{
+     background-image: url('back.png'); 
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.grid-container > div {
+  background-color:  #adebad;
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+Table{
+  text-align: center;
+
+}
+
+.grid1-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px 0px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+}
+.grid1-item {
+  background-color: white;
+  padding: 10px 0px;
+  text-align: center;
+}
+@media only screen and (max-width:700px) {
+.item1 { grid-area: header; }
+.item2 {visibility:hidden;}  
+.item3 {  grid-area: main; }
+.item4 { grid-area: right; }
+.item5 {  grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    ' main main main right right'
+    'footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: orange;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #ffe0b3;
+  text-align: center;
+  padding: 20px 0;
+}
+.grid1-container {
+  display: grid;
+  grid-template-columns: auto ;
+  padding: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+}
+.grid1-item {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+}
+}
+
+@media only screen and (max-width:400px) {
+.item1 { grid-area: header; }
+.item2 {visibility:hidden;}  
+.item3 {  grid-area: main; }
+.item4 { visibility:hidden; }
+.item5 {  grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header '
+    ' main main main'
+    'footer footer footer';
+  grid-gap: 10px;
+  background-color: red;
+  padding: 10px;
+}
+ .grid-container > div {
+  background-color:  #ffb3b3;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+}
+</style>
+</head>
+
+<body>
+
+ <div class="grid-container">
+  <div class="item1">
+     <h3> Zainab_Atwa(202109347)</h3>
+</div>
+
+  <div class="item2">
+    <li><a href="#name"><img src="user_icon.png" alt="2">Zainab Atwa</a></li>
+    <li><a href="#fr"><img src="friends_icon.png" alt="2">Frinds</a></li>
+    <li><a href="#ve"><img src="videos_icon.png" alt="2">Vedio</a></li>
+    <li><a href="#name"><img src="groups_icon.png" alt="2">Groups</a></li>
+    <li><a href="#name"><img src="memories_icon.png" alt="2">Memouries</a></li>
+    <li><a href="#name"><img src="saved_icon.png" alt="2">saved</a></li>
+    <li><a href="#name"><img src="ads_icon.png" alt="2">Ads manager</a></li>
+    <li><a href="#name"><img src="climate_icon.png" alt="2">Climate Center</a></li>
+    <li><a href="#name"><img src="feeds_icon.png" alt="2">Feeds</a></li>
+    <li><a href="#name"><img src="fundraiser_icon.png" alt="2">Fundraiser</a></li>
+    <li><a href="#name"><img src="gaming_icon.png" alt="2">Gaming Video</a></li>
+    <li><a href="#name"><img src="market_icon.png" alt="2">Market</a></li>
+
+</div>
+  <div class="item3">
+
+<div class="grid1-container">
+
+<div class="grid1-item">  
+<img src="img_5terre.jpg" alt="Cinuqe Terre" width="250" height="300">
+<h4> Cinuqe Terre</h4>
+</div> 
+ 
+<div class="grid1-item">  
+<img src="img_lights.jpg" alt="nice natural lights" width="250" height="300">
+<h4>Nice atural lights</h4>
+</div>
+
+<div class="grid1-item">  
+<img src="img_mountains.jpg" alt="Amazing mountains" width="250" height="300">
+<h4>Amazing mountains</h4>
+</div>  
+  <div class="grid1-item">  
+
+<img src="img_forest.jpg" alt="breathtaking first" width="250" height="300">
+<h4>Breathtaking first</h4>
+</div>  
+
+</div>
+
+</div>  
+  <div class="item4">
+<span style='font-size:100px;'>&#128522;</span>
+<h2> TAKE <br> <br>IT <br><br>ESAY<br></h2>
+
+</div>
+  <div class="item5">
+<P> You should compress all the files and submit them on eclass before the time is over </p>
+<p>Each minute delay will cost you to lose one grade</p>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* media */
+
+/*when screen < 1200*/
+
+@media (max-width:1200px) {
+
+    html{
+
+        font-size: 60%;
+    }
+
+    header{
+        padding: 1.0rem;
+    }
+
+    section{
+        padding: 1.5rem;
+    }
+
+  
+
+}
+
+
+
+
+
+/*when screen < 1000*/
+
+@media (max-width:1000px) {
+   
+    .sport .row{
+     flex-wrap: wrap;
+    }
+    
+    .sport .row p{
+        font-size: 2.4rem;
+    }
+}
+
+/*when screen < 956*/
+
+@media (max-width:956px) {
+    header .mainlist a{
+     font-size: 1.03rem;
+  
+    }
+
+}
+
+
+
+/*when screen < 890*/
+
+@media (max-width:890px) {
+
+    html .fa-bars{
+       display: block; 
+    }
+
+    header .mainlist{
+        position: absolute;
+        top: 100%; left:0 ; right: 0;
+        background: #eee;
+        border-top: .1rem solid black;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    header #chlist:checked ~ .mainlist{
+        clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+    }
+
+    header .mainlist a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border:.1rem solid #eee;
+        display: block;
+
+    }
+
+    .home .content h3{
+        font-size: 2rem;
+    }
+
+    .home .content span{
+        font-size: 5.8rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .icons-container .icons h3{
+        font-size: 1.3rem;
+       }
+    
+       .icons-container .icons span{
+        font-size: 1.7rem;
+       }
+
+       header .mainlist a:hover {
+        color: rgb(79, 188, 12);
+    }
+
+}
+
+
+/*when screen < 841*/
+
+@media (max-width:841px) {
+
+    .academic .row .image img{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+
+/*when screen < 764*/
+
+@media (max-width:764px) {
+
+    .academic .heading{
+        display: block;
+    }
+
+    .academic .row .content h3{
+        display: none; 
+    }
+
+}
+
+
+/*when screen <754*/
+
+@media (max-width:754px) {
+    .home{
+        background: url(flowe.png);
+    }
+
+    .intro{
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(224, 224, 224));
+    }
+}
+
+
+/*when screen < 680*/
+
+@media (max-width:680px) {
+    .home{
+        background-image: linear-gradient(white,rgb(235, 255, 238));
+    }
+
+    .intro{
+        background-image: linear-gradient(rgb(235, 255, 238), rgb(224, 224, 224));
+
+    }
+}
+
+
+
+/*when screen < 625*/
+
+
+@media (max-width:625px) {
+
+    .home .content span{
+        font-size: 5rem;
+    }
+
+}
+
+
+/*when screen < 400*/
+
+@media (max-width:400px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+   
+
+}
